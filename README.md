@@ -8,9 +8,9 @@ This repository contains a Python implementation of the Canny Edge Detection alg
 
 To run the program with default values, use the following command:
 
-\```bash
+```bash
 python canny.py
-\```
+```
 
 Default values:
 - Image: 253036.jpg
