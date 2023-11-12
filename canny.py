@@ -258,8 +258,8 @@ def main(FLAGS):
 
 
     # Write convolved images 
-    cv2.imwrite('./x_convolved.jpg', Ix)
-    cv2.imwrite('./y_convolved.jpg', Iy)
+    cv2.imwrite('./images/x_convolved.jpg', Ix)
+    cv2.imwrite('./imgages/y_convolved.jpg', Iy)
 
     # Add the Gaussian mask against X output to plot
     fig.add_subplot(rows, columns, 2)
@@ -296,8 +296,8 @@ def main(FLAGS):
     plt.axis('off')
 
     # Write derivative convolved images 
-    cv2.imwrite('./xy_convolved.jpg', Ixy)
-    cv2.imwrite('./yx_convolved.jpg', Iyx)
+    cv2.imwrite('./imgages/xy_convolved.jpg', Ixy)
+    cv2.imwrite('./imgages/yx_convolved.jpg', Iyx)
 
     # Calculate the magnitude of the two convolved images
     Im = CalculateMagnitude(Ixy, Iyx)
@@ -309,7 +309,7 @@ def main(FLAGS):
     plt.axis('off')
 
     # Write magnitude image 
-    cv2.imwrite('./Imagnitude.jpg', Im)
+    cv2.imwrite('./images/Imagnitude.jpg', Im)
 
     # Calculate the non-maximum supression of two images
     # against the magnitude
@@ -322,7 +322,7 @@ def main(FLAGS):
     plt.axis('off')
 
     # Write non-maximum suppression image 
-    cv2.imwrite('./Inms.jpg', Inms)
+    cv2.imwrite('./images/Inms.jpg', Inms)
 
     # Calculate the hysteresis threshould of image
     canny_image = ApplyHysteresisThreshold(Inms, FLAGS.low, FLAGS.high)
@@ -334,7 +334,7 @@ def main(FLAGS):
     plt.axis('off')
 
     # Write canny image 
-    cv2.imwrite('./canny_image.jpg', canny_image)
+    cv2.imwrite('./images/canny_image.jpg', canny_image)
 
     # Display the plot of all images
     plt.show()
