@@ -343,7 +343,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser('Canny Edge Detection')
     parser.add_argument('--image',
-                        type=str, default='./253036.jpg',
+                        type=str, default='./images/253036.jpg',
                         help='Provide an image file path.')
 
     parser.add_argument('--sigma',
