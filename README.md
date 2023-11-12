@@ -55,6 +55,9 @@ A threshold filter is applied to the image, determining edges based on the speci
 
 Three different edge detection runs with varying sigma values (1, 3, 5) are provided in the outputs. The sigma value affects smoothing, influencing the program's ability to find edges. After experimentation, a sigma value of 3.0 and thresholds of 25 and 50 were found to work well for the default image.
 
+![Original Image](images/253036.jpg)
+![Canny](images/canny_image.jpg)
+
 ## Dependencies
 
 - `numpy`
