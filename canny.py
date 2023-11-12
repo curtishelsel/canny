@@ -13,8 +13,8 @@ different stages of the implementation along with exporting them to files.
 
 Dependencies:
 - numpy
-- conv2
-- skimage
+- opencv-python
+- scikit-image
 - matplotlib
 """
 

@@ -58,7 +58,7 @@ Three different edge detection runs with varying sigma values (1, 3, 5) are prov
 ## Dependencies
 
 - `numpy`
-- `conv2`
-- `skimage`
+- `opencv-python`
+- `scikit-image`
 - `matplotlib`
 
