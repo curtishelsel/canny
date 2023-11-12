@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a Python implementation of the Canny Edge Detection algorithm for computer vision. The program includes several stages, such as Gaussian masking, convolution, non-maximum suppression, and hysteresis thresholding. The implementation utilizes `numpy`, `conv2`, `skimage`, and `matplotlib` libraries.
+This repository contains a Python implementation of the Canny Edge Detection algorithm for computer vision. The program includes several stages, such as Gaussian masking, convolution, non-maximum suppression, and hysteresis thresholding. The implementation utilizes `numpy`, `opencv-python`, `scikit-image`, and `matplotlib` libraries.
 
 ## Running the Program
 
